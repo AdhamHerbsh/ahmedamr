@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+  </head>
+  <body>
+    <style>
+      header {
+        background-color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo {
+        text-decoration: none;
+        color: white;
+        font-size: 2em;
+        font-weight: 900;
+      }
+      header nav a {
+        text-decoration: none;
+        font-size: 1.5em;
+        font-weight: 700;
+        color: white;
+        padding-left: 15px;
+      }
+      .title {
+        display: flex;
+        justify-content: center;
+        font-size: 3em;
+        font-weight: 900;
+        color: rgb(0, 0, 0);
+        margin-left: 220px;
+      }
+      label {
+        padding: 15px;
+        padding-right: 30px;
+        font-size: 1.5em;
+        font-weight: 800;
+      }
+      .input {
+        display: flex;
+        padding: 10px;
+        margin: 20px;
+        justify-content: center;
+        margin-left: 60px;
+        width: 100%;
+      }
+      .button {
+        text-decoration: none;
+        color: white;
+        background-color: rgb(10, 10, 10);
+        font-size: 1.5em;
+        font-weight: 900;
+        padding: 15px;
+        border-radius: 15px;
+        margin-left: 250px;
+      }
+      .textarea {
+        display: flex;
+        padding: 10px;
+        margin: 20px;
+        justify-content: center;
+        margin-left: 60px;
+        width: 100%;
+        margin-bottom: 70px;
+      }
+
+      .main {
+        display: flex;
+        justify-content: space-between;
+      }
+      .di-img {
+        width: 50%;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background: url() no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+      img {
+        margin-top: 10px;
+        margin-left: 100px;
+      }
+
+      @media (max-width: 400px) {
+        body {
+          font-size: 14px;
+        }
+
+        .logo {
+          font-size: 1.5em;
+        }
+
+        header nav a {
+          font-size: 0.7em;
+        }
+
+        .button {
+          font-size: 1.5em;
+          font-weight: 900;
+          padding: 15px;
+          border-radius: 15px;
+          margin-left: 180px;
+        }
+
+        .textarea {
+          display: flex;
+          padding: 10px;
+          margin: 20px;
+          justify-content: center;
+          margin-left: 60px;
+          width: 70%;
+          margin-bottom: 70px;
+        }
+
+        .input {
+          display: flex;
+          padding: 10px;
+          margin: 20px;
+          justify-content: center;
+          margin-left: 60px;
+          width: 70%;
+        }
+        .title {
+          display: flex;
+          justify-content: center;
+          font-size: 3em;
+          font-weight: 900;
+          color: rgb(7, 0, 0);
+          margin-left: 0px;
+        }
+        .main {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          color: rgb(8, 0, 0);
+        }
+        .di-img {
+          width: 100%;
+          min-height: 100vh;
+          display: flex;
+          align-items: center;
+          background: url(WhatsApp\ Image\ 2023-08-02\ at\ 12.59.03\ PM.jpeg)
+            no-repeat;
+          background-size: cover;
+          background-position: center;
+          background-attachment: fixed;
+          margin-left: 0px;
+        }
+        img {
+          margin-left: 0px;
+        }
+      }
+    </style>
+    <header>
+      <a href="#" class="logo">scuba life</a>
+      <nav>
+        <a href="index.html">about us </a>
+        <a href="services.html">services </a>
+        <a href="offers.html">offers </a>
+        <a href="products.html">product </a>
+        <a href="contact.html">contact us </a>
+      </nav>
+    </header>
+
+    <section class="main">
+      <div>
+        <h1 class="title">Contact</h1>
+        <label>E-mail</label>
+        <input class="input" type="text" value="E-mail" /> <br />
+        <label>Phone </label>
+        <input class="input" type="text" value="Phone" /><br />
+        <label>Massage</label>
+        <textarea class="textarea" cols="20" rows="5"></textarea>
+        <a class="button" href="#" onclick="myFunction()">send</a>
+      </div>
+      <img
+        class="di-img"
+        src="WhatsApp Image 2023-08-02 at 12.59.03 PM.jpeg"
+        width="500"
+        height="500"
+      />
+    </section>
+
+    <script>
+      function myFunction() {
+        alert("Done");
+      }
+    </script>
+  </body>
+</html>
